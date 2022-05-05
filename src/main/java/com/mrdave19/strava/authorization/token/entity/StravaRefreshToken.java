@@ -1,19 +1,15 @@
-package com.mrdave19.strava.authorization.entity;
+package com.mrdave19.strava.authorization.token.entity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class StravaRefreshToken {
 
     @Id
-    @GeneratedValue
-    private long id;
-
     @Column(name="athlete_id")
     private long athleteId;
 
@@ -21,14 +17,6 @@ public class StravaRefreshToken {
     private String refreshToken;
 
     private String scope;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public long getAthleteId() {
         return athleteId;
