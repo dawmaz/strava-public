@@ -1,8 +1,5 @@
 package com.mrdave19.strava.request;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public enum StravaAuthorizationRequestParams {
     RESPONSE_TYPE("response_type"),

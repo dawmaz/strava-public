@@ -1,6 +1,6 @@
-package com.mrdave19.strava.subscription.initial.controller;
+package com.mrdave19.strava.subscription.create.controller;
 
-import com.mrdave19.strava.subscription.initial.SubscriptionOperator;
+import com.mrdave19.strava.subscription.create.SubscriptionOperator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
