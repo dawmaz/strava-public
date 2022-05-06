@@ -1,6 +1,4 @@
-package com.mrdave19.strava.authorization.token.response;
-
-import java.util.Date;
+package com.mrdave19.strava.authorization.response;
 
 public class ExchangeResponse {
 

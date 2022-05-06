@@ -1,7 +1,7 @@
 package com.mrdave19.strava.controller;
 
 import com.mrdave19.strava.authorization.token.TokenOperator;
-import com.mrdave19.strava.authorization.token.response.ExchangeResponse;
+import com.mrdave19.strava.authorization.response.ExchangeResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

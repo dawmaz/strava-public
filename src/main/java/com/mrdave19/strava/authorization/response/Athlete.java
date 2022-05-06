@@ -1,4 +1,4 @@
-package com.mrdave19.strava.authorization.token.response;
+package com.mrdave19.strava.authorization.response;
 
 import java.util.Date;
 

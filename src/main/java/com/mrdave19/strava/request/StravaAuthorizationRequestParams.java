@@ -1,4 +1,4 @@
-package com.mrdave19.strava.authorization.request;
+package com.mrdave19.strava.request;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +13,9 @@ public enum StravaAuthorizationRequestParams {
     CLIENT_SECRET("client_secret"),
     CODE("code"),
     GRANT_TYPE("grant_type"),
-    REFRESH_TOKEN("refresh_token");
+    REFRESH_TOKEN("refresh_token"),
+    CALLBACK_URL("callback_url"),
+    VERIFY_TOKEN("verify_token");
 
 
     private String paramName;

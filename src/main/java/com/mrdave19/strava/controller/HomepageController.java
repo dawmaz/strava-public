@@ -1,7 +1,7 @@
 package com.mrdave19.strava.controller;
 
-import com.mrdave19.strava.authorization.request.StravaAuthorizationRequestParams;
-import com.mrdave19.strava.authorization.request.StravaEndpoint;
+import com.mrdave19.strava.request.StravaAuthorizationRequestParams;
+import com.mrdave19.strava.request.StravaEndpoint;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
