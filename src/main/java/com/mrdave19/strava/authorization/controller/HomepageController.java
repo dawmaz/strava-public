@@ -1,4 +1,4 @@
-package com.mrdave19.strava.controller;
+package com.mrdave19.strava.authorization.controller;
 
 import com.mrdave19.strava.request.StravaAuthorizationRequestParams;
 import com.mrdave19.strava.request.StravaEndpoint;
