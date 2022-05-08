@@ -1,4 +1,4 @@
-package com.mrdave19.strava.request;
+package com.mrdave19.strava.commons;
 
 
 public enum StravaAuthorizationRequestParams {
