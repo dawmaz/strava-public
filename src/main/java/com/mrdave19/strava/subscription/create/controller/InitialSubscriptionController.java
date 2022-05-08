@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
+import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @Controller
@@ -18,7 +19,7 @@ public class InitialSubscriptionController {
     public String initializeSubscription(Model model) throws UnknownHostException {
 
         subscriptionOperator.registerForSubscription();
-        model.addAttribute("text","Request to Strava Subscription successful");
+        model.addAttribute("text","Request to Strava Subscription successful with hostname: " + InetAddress.getLocalHost().getHostName());
         return "simpletext";
     }
 
