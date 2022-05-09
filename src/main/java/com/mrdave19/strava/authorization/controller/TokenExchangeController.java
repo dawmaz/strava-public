@@ -8,6 +8,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 @Controller
 public class TokenExchangeController {
 
@@ -24,7 +31,11 @@ public class TokenExchangeController {
             return "token";
         }
 
+        Webhook.ping("tokenController","About to start exchanging tokens");
+
         ExchangeResponse exchangeResponse = tokenOperator.exchangeCodeForTokens(code);
+
+        Webhook.ping("tokenController","Tokens exchanged. About to persist data to DB");
         tokenOperator.persistTokensToDb(exchangeResponse,scope);
 
         model.addAttribute("text", "Authorization successful!");
