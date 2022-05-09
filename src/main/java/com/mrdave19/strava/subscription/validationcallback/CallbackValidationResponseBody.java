@@ -1,7 +1,10 @@
 package com.mrdave19.strava.subscription.validationcallback;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class CallbackValidationResponseBody {
 
+    @JsonProperty("hub.challenge")
     private String hub_challenge;
 
     public CallbackValidationResponseBody(String hub_challenge) {

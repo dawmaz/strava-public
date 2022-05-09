@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ValidationRequestController {
 
     @GetMapping("/stravaHook")
-    public CallbackValidationResponseBody validateCallback(@RequestParam(name="hub_verify_token") String verifyToken,
-                                                           @RequestParam(name="hub_challenge") String hubChallenge){
+    public CallbackValidationResponseBody validateCallback(@RequestParam(name="hub.verify_token") String verifyToken,
+                                                           @RequestParam(name="hub.challenge") String hubChallenge){
 
         Webhook.ping("validationcallback","Received validation request");
 
