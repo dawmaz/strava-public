@@ -23,7 +23,7 @@ public class HomepageController {
 
         String path = StravaEndpoint.INITIAL_AUTHORIZATION.getPath();
 
-        String hostname = "https://strava-appka.azurewebsites.net/";
+        String hostname = "http://strava-appka.azurewebsites.net/";
 
 
         return UriComponentsBuilder.fromUriString(path)
