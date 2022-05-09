@@ -14,12 +14,9 @@ public class ValidationRequestController {
     public CallbackValidationResponseBody validateCallback(@RequestParam(name="hub.verify_token") String verifyToken,
                                                            @RequestParam(name="hub.challenge") String hubChallenge){
 
-        Webhook.ping("validationcallback","Received validation request");
-
         if(!verifyToken.equals(SubscriptionOperator.VERIFY_TOKEN))
             return null;
 
-        Webhook.ping("returningChallenge", hubChallenge);
         return new CallbackValidationResponseBody(hubChallenge);
     }
 

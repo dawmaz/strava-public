@@ -19,9 +19,8 @@ public class InitialSubscriptionController {
     @GetMapping("/initialize/subscription")
     public String initializeSubscription(Model model) throws UnknownHostException {
 
-        Webhook.ping("initSub","About to register for a sub.");
-        subscriptionOperator.registerForSubscription();
-        model.addAttribute("text","Request to Strava Subscription successful with hostname: " + InetAddress.getLocalHost().getHostName());
+        String s = subscriptionOperator.registerForSubscription();
+        model.addAttribute("text",s);
         return "simpletext";
     }
 
