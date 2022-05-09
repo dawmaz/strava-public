@@ -68,6 +68,13 @@ public class ActivityResponseBody {
     private SimilarActivities similar_activities;
     private ArrayList<Object> available_zones;
 
+    private double elev_high;
+
+    private ArrayList<SplitsMetric> splits_metric;
+    private ArrayList<SplitsStandard> splits_standard;
+
+    private String device_name;
+
     public int getResource_state() {
         return resource_state;
     }
@@ -546,5 +553,37 @@ public class ActivityResponseBody {
 
     public void setAvailable_zones(ArrayList<Object> available_zones) {
         this.available_zones = available_zones;
+    }
+
+    public double getElev_high() {
+        return elev_high;
+    }
+
+    public void setElev_high(double elev_high) {
+        this.elev_high = elev_high;
+    }
+
+    public ArrayList<SplitsMetric> getSplits_metric() {
+        return splits_metric;
+    }
+
+    public void setSplits_metric(ArrayList<SplitsMetric> splits_metric) {
+        this.splits_metric = splits_metric;
+    }
+
+    public ArrayList<SplitsStandard> getSplits_standard() {
+        return splits_standard;
+    }
+
+    public void setSplits_standard(ArrayList<SplitsStandard> splits_standard) {
+        this.splits_standard = splits_standard;
+    }
+
+    public String getDevice_name() {
+        return device_name;
+    }
+
+    public void setDevice_name(String device_name) {
+        this.device_name = device_name;
     }
 }

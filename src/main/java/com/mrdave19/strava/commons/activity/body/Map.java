@@ -5,6 +5,8 @@ public class Map {
     private String polyline;
     private int resource_state;
 
+    private String summary_polyline;
+
     public String getId() {
         return id;
     }
@@ -27,5 +29,13 @@ public class Map {
 
     public void setResource_state(int resource_state) {
         this.resource_state = resource_state;
+    }
+
+    public String getSummary_polyline() {
+        return summary_polyline;
+    }
+
+    public void setSummary_polyline(String summary_polyline) {
+        this.summary_polyline = summary_polyline;
     }
 }
