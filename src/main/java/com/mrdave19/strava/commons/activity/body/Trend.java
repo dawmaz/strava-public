@@ -1,7 +1,9 @@
 package com.mrdave19.strava.commons.activity.body;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.ArrayList;
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Trend {
     private ArrayList<Object> speeds;
     private Object current_activity_index;

@@ -1,5 +1,8 @@
 package com.mrdave19.strava.commons.activity.body;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class StatsVisibility {
     private String type;
     private String visibility;

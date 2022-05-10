@@ -1,10 +1,12 @@
 package com.mrdave19.strava.commons.activity.body;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
 import java.util.Date;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ActivityResponseBody {
     private int resource_state;
     private Athlete athlete;

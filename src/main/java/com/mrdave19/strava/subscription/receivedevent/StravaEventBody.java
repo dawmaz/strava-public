@@ -1,7 +1,8 @@
 package com.mrdave19.strava.subscription.receivedevent;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class StravaEventBody {
 
     private String aspect_type;
@@ -12,6 +13,7 @@ public class StravaEventBody {
     private int subscription_id;
     private Updates updates;
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public class Updates{
         private String title;
         private String type;

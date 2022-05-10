@@ -1,5 +1,8 @@
 package com.mrdave19.strava.commons.activity.body;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class SimilarActivities {
     private int effort_count;
     private int average_speed;

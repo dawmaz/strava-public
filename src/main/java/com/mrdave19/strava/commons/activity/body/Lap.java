@@ -1,7 +1,10 @@
 package com.mrdave19.strava.commons.activity.body;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Date;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Lap {
     private long id;
     private int resource_state;
