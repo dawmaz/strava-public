@@ -46,7 +46,9 @@ public class ActivityTypeChanger {
                         .uri(prepareActivityUri(body.getObject_id()))
                         .header("Authorization","Bearer " + token)
                         .header("Content-Type","application/json")
-                        .PUT(HttpRequest.BodyPublishers.ofString("{\"type\": \"InlineSkate\"}"))
+                        .PUT(HttpRequest.BodyPublishers.ofString("{\"type\": \"InlineSkate\",\n" +
+                                "\"name\": \"Relaksik na rolkach\"\n" +
+                                "}"))
                         .build();
 
                 HttpClient client = HttpClient.newHttpClient();
