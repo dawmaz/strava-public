@@ -31,11 +31,8 @@ public class TokenExchangeController {
             return "token";
         }
 
-        Webhook.ping("tokenController","About to start exchanging tokens");
-
         ExchangeResponse exchangeResponse = tokenOperator.exchangeCodeForTokens(code);
 
-        Webhook.ping("tokenController","Tokens exchanged. About to persist data to DB");
         tokenOperator.persistTokensToDb(exchangeResponse,scope);
 
         model.addAttribute("text", "Authorization successful!");

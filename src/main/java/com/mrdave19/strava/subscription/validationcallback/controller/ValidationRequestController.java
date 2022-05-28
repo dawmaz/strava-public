@@ -1,6 +1,5 @@
 package com.mrdave19.strava.subscription.validationcallback.controller;
 
-import com.mrdave19.strava.authorization.controller.Webhook;
 import com.mrdave19.strava.subscription.create.SubscriptionOperator;
 import com.mrdave19.strava.subscription.validationcallback.CallbackValidationResponseBody;
 import org.springframework.web.bind.annotation.GetMapping;

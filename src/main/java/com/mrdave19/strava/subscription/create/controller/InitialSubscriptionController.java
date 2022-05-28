@@ -1,6 +1,5 @@
 package com.mrdave19.strava.subscription.create.controller;
 
-import com.mrdave19.strava.authorization.controller.Webhook;
 import com.mrdave19.strava.subscription.create.SubscriptionOperator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

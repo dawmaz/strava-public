@@ -1,6 +1,5 @@
 package com.mrdave19.strava.event;
 
-import com.mrdave19.strava.authorization.controller.Webhook;
 import com.mrdave19.strava.authorization.token.TokenOperator;
 import com.mrdave19.strava.commons.StravaEndpoint;
 import com.mrdave19.strava.commons.activity.ActivityProvider;
@@ -34,8 +33,6 @@ public class ActivityTypeChanger {
 
     private void processActivity(StravaEventBody body){
         boolean isNewActivity = body.getObject_type().equals("activity") && body.getAspect_type().equals("create");
-
-        Webhook.ping("newActivity",body);
 
         if(isNewActivity){
             ActivityResponseBody activityResponseBody = activityProvider.provideActivity(body.getObject_id(), body.getOwner_id());
