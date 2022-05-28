@@ -20,8 +20,8 @@ public class TokenExchangeController {
                          Model model){
 
         if(error!=null){
-            model.addAttribute("error","Your request cannot be processed");
-            return "token";
+            model.addAttribute("text","Your request cannot be processed");
+            return "simpletext";
         }
 
         ExchangeResponse exchangeResponse = tokenOperator.exchangeCodeForTokens(code);

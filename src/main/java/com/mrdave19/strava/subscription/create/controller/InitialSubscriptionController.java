@@ -7,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @Controller
@@ -16,7 +15,7 @@ public class InitialSubscriptionController {
     @Autowired
     SubscriptionOperator subscriptionOperator;
     @GetMapping("/initialize/subscription")
-    public String initializeSubscription(Model model) throws UnknownHostException {
+    public String initializeSubscription(Model model) {
 
         String s = subscriptionOperator.registerForSubscription();
         model.addAttribute("text",s);
