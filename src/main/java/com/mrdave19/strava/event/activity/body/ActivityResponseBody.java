@@ -1,4 +1,4 @@
-package com.mrdave19.strava.commons.activity.body;
+package com.mrdave19.strava.event.activity.body;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

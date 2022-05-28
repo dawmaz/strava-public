@@ -1,19 +1,12 @@
 package com.mrdave19.strava.authorization.controller;
 
 import com.mrdave19.strava.authorization.token.TokenOperator;
-import com.mrdave19.strava.authorization.response.ExchangeResponse;
+import com.mrdave19.strava.authorization.token.response.ExchangeResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 @Controller
 public class TokenExchangeController {

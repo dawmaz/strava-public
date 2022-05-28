@@ -1,9 +1,9 @@
-package com.mrdave19.strava.commons.activity.body;
+package com.mrdave19.strava.event.activity.body;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Activity {
+public class Athlete {
     private long id;
     private int resource_state;
 

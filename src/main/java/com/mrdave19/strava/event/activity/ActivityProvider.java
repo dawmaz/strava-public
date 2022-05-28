@@ -1,8 +1,8 @@
-package com.mrdave19.strava.commons.activity;
+package com.mrdave19.strava.event.activity;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mrdave19.strava.authorization.token.TokenOperator;
 import com.mrdave19.strava.commons.StravaEndpoint;
-import com.mrdave19.strava.commons.activity.body.ActivityResponseBody;
+import com.mrdave19.strava.event.activity.body.ActivityResponseBody;
 import com.mrdave19.strava.subscription.create.SubscriptionOperator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

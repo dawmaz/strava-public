@@ -2,8 +2,8 @@ package com.mrdave19.strava.event;
 
 import com.mrdave19.strava.authorization.token.TokenOperator;
 import com.mrdave19.strava.commons.StravaEndpoint;
-import com.mrdave19.strava.commons.activity.ActivityProvider;
-import com.mrdave19.strava.commons.activity.body.ActivityResponseBody;
+import com.mrdave19.strava.event.activity.ActivityProvider;
+import com.mrdave19.strava.event.activity.body.ActivityResponseBody;
 import com.mrdave19.strava.subscription.receivedevent.StravaEventBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

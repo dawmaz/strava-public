@@ -1,10 +1,9 @@
-package com.mrdave19.strava.commons.activity.body;
+package com.mrdave19.strava.event.activity.body;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class SplitsStandard {
-
+public class SplitsMetric {
     private double distance;
     private int elapsed_time;
     private double elevation_difference;
